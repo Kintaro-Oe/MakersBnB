@@ -92,7 +92,7 @@ You will need to set up local databases in order to run and test this app proper
 * Install `psql` by entering `brew install postgresql`
 
 * Then enter the following line:
-`psql -f ./db/migrations/01_create_table.sql`
+`psql -f ./db/migrations/01_create_tables.sql`
 This will run the SQL script in `db/migrations` folder and setup the appropriate tables needed.
 
 ## How to Run__
