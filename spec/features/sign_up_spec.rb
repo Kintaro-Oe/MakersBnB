@@ -1,5 +1,5 @@
 feature 'Non system user can register' do
-  scenario 'registers details for an account' do
+  scenario 'new users details are saved to database' do
     visit '/'
     click_button "Sign Up"
     fill_in "First Name", with: "Dave"
