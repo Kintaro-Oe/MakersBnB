@@ -12,4 +12,4 @@ before_install:
 before_script:
 - psql -c 'create database bnb_test;' -U postgres
 - psql -d bnb_test -c 'CREATE TABLE users (id serial PRIMARY KEY, first_name VARCHAR (30), surname VARCHAR (30), email VARCHAR (120), password VARCHAR (30));' -U postgres
-- psql -d bnb_test -c 'CREATE TABLE properties (id serial PRIMARY KEY, user_id FOREIGN KEY, property_name VARCHAR (60), price DECIMAL (4,2), available_dates DATE, description VARCHAR (240));' -U postgres
+- psql -d bnb_test -c 'CREATE TABLE properties (id serial PRIMARY KEY, user_id VARCHAR, property_name VARCHAR (60), price DECIMAL (4,2), available_dates DATE, description VARCHAR (240));' -U postgres
