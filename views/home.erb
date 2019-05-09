@@ -1,7 +1,9 @@
 <head>
   <link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css" />
-<title>Ruby n B</title></head><center><br>
-<h3>Welcome <% if @first_name %><%= @first_name %><% end %>!</h3><br>
+<title>Ruby n B</title>
+</head>
+<center>
+  <br><h3>Welcome <% if @first_name %><%= @first_name %><% end %>!</h3><br>
 
 <% if @first_name %><form action="/sign_out" method="post">
 <input type="submit" value="Sign Out" class = "button" style="border:none">
@@ -15,14 +17,22 @@
 </form><% end %>
 </center>
 
-<h3><% @properties.each do |property|%>
-  <li><%= property.property_name %>,   £<%= property.price %> per night<br>
-Property description:<br>
-  <%= property.description %><br>
-Available dates:
-<%= property.available_dates.strftime('%d-%m-%Y') %>
-<% if @first_name %>&nbsp;<a href="/request_sent">Request a booking</a> <% end %>
-</li>
-<% end %> </h3>
+
+<% @properties.each do |property|%>
+  <br>
+  <p>
+    <b style="font-size:20px;"><%= property.property_name %></b><b style="font-size:10px;"> - £<%= property.price %> per night</b>
+    <dl style="color:grey;"">
+    <dt>Description:</dt>
+    <dd><%= property.description %></dd>
+    </dl>
+
+    Available dates: <%= property.available_dates.strftime('%d-%m-%Y') %>
+    <% if @first_name %>&nbsp;<a href="/request_sent">Request a booking</a> <% end %>
+  </p>
+  <br>
+  <hr>
+<% end %>
+
 
 <br><h6><a href="/">Go back to main</a></h6>
