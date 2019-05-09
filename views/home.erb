@@ -21,7 +21,7 @@ Property description:<br>
   <%= property.description %><br>
 Available dates:
 <%= property.available_dates.strftime('%d-%m-%Y') %>
-&nbsp;<a href="/request_sent">Request a booking</a> 
+<% if @first_name %>&nbsp;<a href="/request_sent">Request a booking</a> <% end %>
 </li>
 <% end %> </h3>
 

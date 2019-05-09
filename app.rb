@@ -36,8 +36,8 @@ class BnB < Sinatra::Base
   post '/signed_in_users' do
 
     user = User.authenticate(email: params[:email], password: params[:password])
-      session[:user] = user
-      session[:email] = params[:email]
+    session[:user] = user
+    session[:email] = params[:email]
 
     if user
       session[:user_id] = user.id
