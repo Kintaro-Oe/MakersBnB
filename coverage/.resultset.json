@@ -1,9 +1,72 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/jordan/Documents/Makers/GroupTasks/MakersBnB/spec/features/create_listing_spec.rb": [
+      "/Users/student/Desktop/Projects/Week_6/MakersBnB/spec/database_connection_spec.rb": [
+        1,
+        null,
         1,
         1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/student/Desktop/Projects/Week_6/MakersBnB/spec/features/authentication_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/student/Desktop/Projects/Week_6/MakersBnB/spec/features/create_listing_spec.rb": [
         1,
         1,
         1,
@@ -19,7 +82,39 @@
         null,
         null
       ],
-      "/Users/jordan/Documents/Makers/GroupTasks/MakersBnB/spec/features/sign_up_spec.rb": [
+      "/Users/student/Desktop/Projects/Week_6/MakersBnB/spec/features/request_booking_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/student/Desktop/Projects/Week_6/MakersBnB/spec/features/sign_in_spec.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/student/Desktop/Projects/Week_6/MakersBnB/spec/features/sign_up_spec.rb": [
         1,
         1,
         1,
@@ -33,7 +128,7 @@
         null,
         null
       ],
-      "/Users/jordan/Documents/Makers/GroupTasks/MakersBnB/spec/features/test_infrastructure_spec.rb": [
+      "/Users/student/Desktop/Projects/Week_6/MakersBnB/spec/features/test_infrastructure_spec.rb": [
         1,
         1,
         1,
@@ -41,7 +136,7 @@
         null,
         null
       ],
-      "/Users/jordan/Documents/Makers/GroupTasks/MakersBnB/spec/property_spec.rb": [
+      "/Users/student/Desktop/Projects/Week_6/MakersBnB/spec/property_spec.rb": [
         1,
         null,
         1,
@@ -53,7 +148,6 @@
         null,
         null,
         null,
-        1,
         1,
         1,
         1,
@@ -65,7 +159,7 @@
         null,
         null
       ],
-      "/Users/jordan/Documents/Makers/GroupTasks/MakersBnB/spec/user_spec.rb": [
+      "/Users/student/Desktop/Projects/Week_6/MakersBnB/spec/user_spec.rb": [
         1,
         null,
         1,
@@ -79,6 +173,6 @@
         null
       ]
     },
-    "timestamp": 1557412017
+    "timestamp": 1557420543
   }
 }

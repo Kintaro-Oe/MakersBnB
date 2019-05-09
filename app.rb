@@ -48,11 +48,6 @@ class BnB < Sinatra::Base
       redirect '/sign_in'
     end
 
-    # result = DatabaseConnection.query("SELECT * FROM users WHERE email = '#{params[:email]}'")
-    # user = User.new(id: result[0]['id'], first_name: result[0]['first_name'], surname: result[0]['surname'], email: result[0]['email'], password: result[0]['password'])
-    # session[:user_id] = user.id
-    # session[:first_name] = user.first_name
-    # redirect '/home'
   end
 
   get '/home' do
@@ -74,6 +69,10 @@ class BnB < Sinatra::Base
       description: params[:description]
     )
     redirect '/home'
+  end
+
+  get '/request_sent' do
+    erb :request_sent
   end
 
   run! if app_file == $0

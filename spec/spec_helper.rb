@@ -4,6 +4,7 @@ require 'simplecov'
 require 'simplecov-console'
 require 'capybara'
 require 'capybara/rspec'
+require_relative 'dry_helper'
 require_relative '../app.rb'
 require_relative './setup_test_database'
 
