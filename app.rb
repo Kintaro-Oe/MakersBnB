@@ -22,6 +22,7 @@ class BnB < Sinatra::Base
 
   get '/home' do
     @first_name = session[:first_name]
+    @properties = Property.retrieve_listing
     erb :home
   end
 

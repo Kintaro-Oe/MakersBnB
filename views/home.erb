@@ -8,7 +8,12 @@
 </form><% end %>
 </center>
 
-<h3>property_name<br>
-description</h3>
+<h3><% @properties.each do |property|%>
+  <li><%= property.property_name %>,   £<%= property.price %> per night<br>
+Property description:<br>
+  <%= property.description %><br>
+Available dates:
+<%= property.available_dates.strftime('%d-%m-%Y') %></li>
+<% end %> </h3>
 
 <br><h6><a href="/">Go back to main</a></h6>

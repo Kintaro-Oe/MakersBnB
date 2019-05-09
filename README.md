@@ -79,21 +79,23 @@ I would like the listing to be appear available until I confirm the booking requ
 
 
 ### How to install
+__Database setup__
+
+You will need to set up local databases in order to run and test this app properly. Please do this step before Base install. This step requires terminal. Please open one and navigate to your new MakersBnB directory if you haven't already done so.
+
+* Install `psql` by entering `brew install postgresql`
+
+* From the command line run `createdb <user>` Swap '<user>' for the username on your machine.
+
+* Then enter the following line:
+`psql -f ./db/migrations/01_create_tables.sql`
+This will run the SQL script in `db/migrations` folder and setup the appropriate tables needed.
+
 __Base install__
 
  * Open your terminal and clone the project by entering `git clone <repo url>`
  * Navigate into the new directory using `cd MakersBnB`
  * Once inside type `bundle install`. This will install all the gems needed to launch and test the app.
-
-__Database setup__
-
-You will need to set up local databases in order to run and test this app properly. This step requires terminal. Please open one and navigate to your new MakersBnB directory if you haven't already done so.
-
-* Install `psql` by entering `brew install postgresql`
-
-* Then enter the following line:
-`psql -f ./db/migrations/01_create_tables.sql`
-This will run the SQL script in `db/migrations` folder and setup the appropriate tables needed.
 
 ## How to Run__
 __Launching & closing the server for the app__
