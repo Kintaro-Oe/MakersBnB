@@ -1,11 +1,17 @@
+<head>
+  <link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css" />
+<title>Ruby n B</title></head><br>
+<h2>Join us!</h2>
 <form action='/users' method='post'>
-  <h3>Please enter your first name</h3>
-  <input type= 'text' name= 'first_name'>
-  <h3>Please enter your last name</h3>
-  <input type= 'text' name= 'surname'>
-  <h3>Please enter your email</h3>
-  <input type= 'text' name= 'email'>
-  <h3>Please enter a password</h3>
-  <input type= 'text' name= 'password'>
-  <input type= 'submit' value = "Submit">
+  &nbsp;&nbsp;<h3>Please enter your first name</h3>
+  <input type= 'text' name= 'first_name' style="border:none">
+  &nbsp;&nbsp;<h3>Please enter your last name</h3>
+  <input type= 'text' name= 'surname' style="border:none">
+  &nbsp;&nbsp;<h3>Please enter your email</h3>
+  <input type= 'text' name= 'email' style="border:none">
+  &nbsp;&nbsp;<h3>Please enter a password</h3>
+  <input type= 'text' name= 'password' style="border:none">
+  <input type= 'submit' value = "Submit" class = "button" style="border:none">
 </form>
+
+<h6><a href="/">Go back to main</a></h6>

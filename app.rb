@@ -16,11 +16,12 @@ class BnB < Sinatra::Base
   post '/users' do
     user = User.create(first_name: params[:first_name], surname: params[:surname], email: params[:email], password: params[:password])
     session[:user_id] = user.id
+    session[:first_name] = user.first_name
     redirect '/home'
   end
 
   get '/home' do
-    session[:user_id]
+    @first_name = session[:first_name]
     erb :home
   end
 
