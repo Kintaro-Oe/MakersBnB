@@ -1,10 +1,17 @@
-<center>
-<h1>'Ruby n B'</h1>
+<head>
+  <link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css" />
+<title>Ruby n B</title>
+</head>
+<center><br>
+<h1>Ruby n B</h1>
 
 <form action="/register" method="get">
-<input type="submit" value="Sign Up">
+<input type="submit" value="Sign Up" class = "button" style="border:none">
 </form>
 <form>
-<input type="submit" value="Sign In">
+<input type="submit" value="Sign In" class = "button" style="border:none">
+</form>
+<form action="/home" method="get">
+<input type="submit" value="Browse listing" class = "button" style="border:none">
 </form>
 </center>
