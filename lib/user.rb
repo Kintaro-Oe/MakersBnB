@@ -1,4 +1,5 @@
 require 'pg'
+require_relative 'database_connection'
 
 class User
   attr_reader :id, :first_name, :surname, :email, :password
@@ -10,6 +11,17 @@ class User
     @email = email
     @password = password
   end
+   
+  # def self.all
+  #   result = DatabaseConnection.query("SELECT * FROM users")
+  #   result.map do |user|
+  #     User.new(
+  #       first_name: user['first_name'],
+  #       surname: user['surname'],
+  #       email: user['email'],
+  #       password: user['password']
+  #     )
+  # end
 
   def self.create(first_name:, surname:, email:, password:)
     if ENV['RACK_ENV'] == 'test'
