@@ -11,7 +11,14 @@ class User
     @email = email
     @password = password
   end
-   
+
+  def self.authenticate(email:, password:)
+    result = DatabaseConnection.query("SELECT * FROM users WHERE email = '#{email}'AND password = '#{password}'")
+    return unless result.any?
+
+    User.new(id: result[0]['id'], first_name: result[0]['first_name'], surname: result[0]['surname'], email: result[0]['email'], password: result[0]['password'])
+  end
+
   # def self.all
   #   result = DatabaseConnection.query("SELECT * FROM users")
   #   result.map do |user|
