@@ -1,0 +1,15 @@
+<head>
+  <link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css" />
+<title>Ruby n B</title></head><br>
+ <% if @email %><h2>!!Please check your email or password!!</h2><% end %>
+
+<h2>Log in!</h2>
+<form action='/signed_in_users' method='post'>
+  &nbsp;&nbsp;<h3>Please enter your email</h3>
+  <input type= 'text' name= 'email' style="border:none">
+  &nbsp;&nbsp;<h3>Please enter a password</h3>
+  <input type= 'text' name= 'password' style="border:none">
+  <input type= 'submit' value = "Submit" class = "button" style="border:none">
+</form>
+
+<h6><a href="/">Go back to main</a></h6>

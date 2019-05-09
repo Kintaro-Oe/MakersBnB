@@ -1,7 +1,11 @@
 feature 'Users can create new listings' do
   scenario 'details are saved to properties database and displayed' do
+    User.create(first_name: 'Steve', surname: 'Jobs', email: 'jobs@world.net', password: 'apple')
+
     visit '/'
-    click_button 'Sign Up'
+    click_button 'Sign In'
+    fill_in(:email, with: 'jobs@world.net')
+    fill_in(:password, with: 'apple')
     click_button 'Submit'
     click_button "Add new listing"
     fill_in 'property_name', with: 'Casa alla Dave'
