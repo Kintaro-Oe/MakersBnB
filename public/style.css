@@ -43,6 +43,10 @@ h3 {
   color: white;
 }
 
+h4 {
+  color: white;
+  line-height: 0px;
+}
 
 a {
   color: var(--secondary-orange);

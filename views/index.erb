@@ -1,17 +1,32 @@
-<head>
-  <link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css" />
-<title>Ruby n B</title>
-</head>
-<center><br>
-<h1>Ruby n B</h1>
 
- <% unless @user %><form action="/register" method="get">
- <input type="submit" value="Sign Up" class = "button" style="border:none">
- </form>
- <form action="/sign_in" method="get">
- <input type="submit" value="Sign In" class = "button" style="border:none">
- </form><% end %>
-<form action="/home" method="get">
-<input type="submit" value="Browse listing" class = "button" style="border:none">
-</form>
-</center>
+  <link href="<%= url('/background_slideshow.css') %>" rel="stylesheet" type="text/css" >
+
+  <ul class="slideshow">
+    <li><span>Image 01</span><div><h3>Welcome</h3></div></li>
+    <li><span>Image 02</span></li>
+    <li><span>Image 03</span></li>
+    <li><span>Image 04</span></li>
+    <li><span>Image 05</span></li>
+    <li><span>Image 06</span></li>
+  </ul>
+
+    <div class="container">
+      <br>
+      <br>
+    <header>
+      <h1><span>Ruby n B</span></h1>
+    </header>
+      <br>
+    <center>
+     <% unless @user %><form action="/register" method="get">
+     <input type="submit" value="Sign Up" class = "button" style="border:none">
+     </form>
+     <form action="/sign_in" method="get">
+     <input type="submit" value="Sign In" class = "button" style="border:none">
+     </form><% end %>
+    <form action="/home" method="get">
+    <input type="submit" value="Browse listings" class = "button" style="border:none">
+    </form>
+    </center>
+
+  </div>
