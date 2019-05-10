@@ -72,6 +72,7 @@ class BnB < Sinatra::Base
   end
 
  get '/manage_properties' do
+   @first_name = session[:first_name]
    erb :manage_properties
  end
 

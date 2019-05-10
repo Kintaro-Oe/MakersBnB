@@ -3,7 +3,7 @@
 <title>Ruby n B</title>
 </head>
 <center>
-  <br><h3>Welcome <% if @first_name %><%= @first_name %><% end %>!</h3><br>
+  <br><h2>Manage your properties here!</h2>
 
 <% if @first_name %><form action="/sign_out" method="post">
 <input type="submit" value="Sign Out" class = "button" style="border:none">
@@ -13,14 +13,14 @@
 <input type="submit" value="Add new listing" class = "button" style="border:none">
 </form><% end %>
 
-<% if @first_name %><form action="/manage_properties" method="get">
-<input type="submit" value="Manage your properties" class = "button" style="border:none">
+<% if @first_name %><form action="/home" method="get">
+<input type="submit" value="Browse listings" class = "button" style="border:none">
 </form><% end %>
 </center>
 
-"Casa alla Steve"
-
-
-
+<h5><div style="background-color: rgba(255, 255, 255, 0.9); padding: 10px; margin: 20px; width: 450px;">
+Casa alla Steve<br><br><form action align = "right">
+<input type="submit" value="Confirm" class = "button" style="border:none">
+</form></div></h5>
 
 <br><h6><a href="/">Go back to main</a></h6>
