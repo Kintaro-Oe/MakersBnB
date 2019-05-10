@@ -71,6 +71,10 @@ class BnB < Sinatra::Base
     redirect '/home'
   end
 
+ get '/manage_properties' do
+   erb :manage_properties
+ end
+
   get '/request_sent' do
     erb :request_sent
   end

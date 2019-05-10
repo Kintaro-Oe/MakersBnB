@@ -1,0 +1,26 @@
+<head>
+  <link href="<%= url('/style.css') %>" rel="stylesheet" type="text/css" />
+<title>Ruby n B</title>
+</head>
+<center>
+  <br><h3>Welcome <% if @first_name %><%= @first_name %><% end %>!</h3><br>
+
+<% if @first_name %><form action="/sign_out" method="post">
+<input type="submit" value="Sign Out" class = "button" style="border:none">
+</form><% end %>
+
+<% if @first_name %><form action="/add_listing" method="get">
+<input type="submit" value="Add new listing" class = "button" style="border:none">
+</form><% end %>
+
+<% if @first_name %><form action="/manage_properties" method="get">
+<input type="submit" value="Manage your properties" class = "button" style="border:none">
+</form><% end %>
+</center>
+
+"Casa alla Steve"
+
+
+
+
+<br><h6><a href="/">Go back to main</a></h6>

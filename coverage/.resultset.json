@@ -66,7 +66,65 @@
         null,
         null
       ],
+      "/Users/student/Desktop/Projects/Week_6/MakersBnB/spec/features/booking_approval_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
       "/Users/student/Desktop/Projects/Week_6/MakersBnB/spec/features/create_listing_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/student/Desktop/Projects/Week_6/MakersBnB/spec/features/handle_requests_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
         1,
         1,
         1,
@@ -173,6 +231,6 @@
         null
       ]
     },
-    "timestamp": 1557444345
+    "timestamp": 1557487434
   }
 }

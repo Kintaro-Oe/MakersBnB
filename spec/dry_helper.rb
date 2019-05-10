@@ -10,6 +10,17 @@ def create_user_sign_in
  click_button 'Submit'
 end
 
+
+def create_dave_sign_in
+ User.create(first_name: 'David', surname: 'Smith', email: 'ds@ds.com', password: 'David')
+ visit '/'
+ click_button 'Sign In'
+ fill_in(:email, with: 'ds@ds.com')
+ fill_in(:password, with: 'David')
+ click_button 'Submit'
+end
+
+
 def populate_properties
   connection = PG.connect dbname: "bnb_test"
   property = Property.add_listing(user_id: '109', property_name: "Casa alla Dave", price: 100.99, available_dates: Date.today, description: "fancy")

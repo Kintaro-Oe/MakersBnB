@@ -15,6 +15,10 @@
 <% if @first_name %><form action="/add_listing" method="get">
 <input type="submit" value="Add new listing" class = "button" style="border:none">
 </form><% end %>
+
+<% if @first_name %><form action="/manage_properties" method="get">
+<input type="submit" value="Manage your properties" class = "button" style="border:none">
+</form><% end %>
 </center>
 
 
@@ -28,7 +32,10 @@
     </dl>
 
     Available dates: <%= property.available_dates.strftime('%d-%m-%Y') %>
-    <% if @first_name %>&nbsp;<a href="/request_sent">Request a booking</a> <% end %>
+    <% if @first_name %>&nbsp;
+    <form action="/request_sent" method="get">
+    <input id= "<%= property.property_name %>" type="submit" class = "button" value="Request a booking">
+    </form> <% end %>
   </p>
   <br>
   <hr>
