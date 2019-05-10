@@ -27,6 +27,9 @@
     <form action="/home" method="get">
     <input type="submit" value="Browse listings" class = "button" style="border:none">
     </form>
+    <% if @user %><form action="/sign_out" method="post">
+    <input type="submit" value="Sign Out" class = "button" style="border:none">
+    </form><% end %>
     </center>
 
   </div>

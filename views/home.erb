@@ -3,7 +3,7 @@
 <title>Ruby n B</title>
 </head>
 <center>
-  <br><h3>Welcome <% if @first_name %><%= @first_name %><% end %>!</h3><br>
+  <br><h2>Welcome <% if @first_name %><%= @first_name %><% end %>!</h2>
 
 <% if @first_name %><form action="/sign_out" method="post">
 <input type="submit" value="Sign Out" class = "button" style="border:none">
@@ -22,23 +22,18 @@
 </center>
 
 
-<% @properties.each do |property|%>
-  <br>
-  <p>
+<% @properties.reverse.each do |property|%><div style="background-color: rgba(255, 255, 255, 0.9); padding: 10px; margin: 20px; width: 450px;">
     <b style="font-size:20px;"><%= property.property_name %></b><b style="font-size:10px;"> - £<%= property.price %> per night</b>
     <dl style="color:grey;"">
     <dt>Description:</dt>
     <dd><%= property.description %></dd>
-    </dl>
-
+    </dl><br>
     Available dates: <%= property.available_dates.strftime('%d-%m-%Y') %>
     <% if @first_name %>&nbsp;
-    <form action="/request_sent" method="get">
+    <form action="/request_sent" method="get" align = "right">
     <input id= "<%= property.property_name %>" type="submit" class = "button" value="Request a booking">
-    </form> <% end %>
-  </p>
-  <br>
-  <hr>
+  </form><% end %>
+  <hr></div>
 <% end %>
 
 
