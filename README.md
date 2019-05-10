@@ -1,19 +1,31 @@
 MakersBnB Challenge
 =================
 
+Team Collaborators
+
+Marcus Clairmont - https://github.com/Kintaro-Oe
+Sejin Kim - https://github.com/sejinkay
+Jordan Roberts - https://github.com/jordantroberts
+Scott Hall - https://github.com/HottScall
+
 ### Context
 Makers Academy - Week six group challenge:
 Build an Airbnb clone.
 
 ### Build Status  
-* MVP achieved?
-* x of y user stories test driven and working. More details on stories and features below.
+* MVP achieved - *YES*
+* 7 of 9 User Stories completed. Outstanding stories are:      
+    - Approve the booking
+    - Appears open until confirmed
+
 
 ### Document Organisation
 * Models: ./lib/
 * Views: ./views/
 * Controller : app.rb
 * Tests: ./spec/
+* Database: ./migrations
+* Images: ./public/images
 
 ### Technologies Used
 __Development Environment__
@@ -33,7 +45,6 @@ __Database__
 * Integration & setup: PG gem, psql
 
 ### User stories - Features
-
 ```
 As a User
 So that I can login to Makers B&B
@@ -74,8 +85,13 @@ I would like the listing to be appear available until I confirm the booking requ
 
 ### Domain Models
 
-<img src="https://i.kym-cdn.com/entries/icons/mobile/000/018/682/obi-wan.jpg" width="40%">
+A model of our relevant databases including the columns, data types and relationships between the databases.
 
+<img src="./public/images/database_model.png">
+
+A basic model our entire site including the pages, the content on the pages and what happens upon each click on the page.
+
+<img src="./public/images/Ruby_n_b_Model.png">
 
 
 ### How to install
