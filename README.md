@@ -1,7 +1,7 @@
 MakersBnB Challenge
 =================
 
-Team Collaborators
+__Team Collaborators__
 
 Marcus Clairmont - https://github.com/Kintaro-Oe
 Sejin Kim - https://github.com/sejinkay
@@ -91,29 +91,33 @@ A model of our relevant databases including the columns, data types and relation
 
 A basic model our entire site including the pages, the content on the pages and what happens upon each click on the page.
 
-<img src="./public/images/Ruby_n_b_Model.png">
+<img src="./public/images/Ruby_n_b_model.png">
 
 
 ### How to install
-__Database setup__
+__Pre install__
 
-You will need to set up local databases in order to run and test this app properly. Please do this step before Base install. This step requires terminal. Please open one and navigate to your new MakersBnB directory if you haven't already done so.
+You will need to set up local databases in order to run and test this app properly. Please ensure that postgresl is installed before you continue. These steps require terminal, please open one.
 
 * Install `psql` by entering `brew install postgresql`
 
-* From the command line run `createdb <user>` Swap '<user>' for the username on your machine.
-
-* Then enter the following line:
-`psql -f ./db/migrations/01_create_tables.sql`
-This will run the SQL script in `db/migrations` folder and setup the appropriate tables needed.
+* From the terminal run `createdb <user>` swap '<user>' for the username on your machine.
 
 __Base install__
 
+Now you are ready to clone the repo!
+
  * Open your terminal and clone the project by entering `git clone <repo url>`
+
  * Navigate into the new directory using `cd MakersBnB`
+
  * Once inside type `bundle install`. This will install all the gems needed to launch and test the app.
 
-## How to Run__
+ * The last step is to enter the following line:
+ `psql -f ./db/migrations/01_create_tables.sql`
+ This will run the SQL script in `db/migrations` folder and setup the appropriate tables needed.
+
+## How to Run
 __Launching & closing the server for the app__
 
 * Enter `rackup -p 3456` into command line to start the server. (3456 may be changed to any port number you like)
