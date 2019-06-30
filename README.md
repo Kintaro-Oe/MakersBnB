@@ -3,10 +3,10 @@ MakersBnB Challenge
 
 __Team Collaborators__
 
-Marcus Clairmont - https://github.com/Kintaro-Oe
-Sejin Kim - https://github.com/sejinkay
-Jordan Roberts - https://github.com/jordantroberts
-Scott Hall - https://github.com/HottScall
+[Marcus Clairmont](https://github.com/Kintaro-Oe) |
+[Sejin Kim](https://github.com/sejinkay) |
+[Jordan Roberts](https://github.com/jordantroberts) |
+[Scott Hall](https://github.com/HottScall)
 
 ### Context
 Makers Academy - Week six group challenge:
@@ -123,12 +123,10 @@ __Launching & closing the server for the app__
 * Enter `rackup -p 3456` into command line to start the server. (3456 may be changed to any port number you like)
 * Enter `CTRL+C` to close the server
 
-__Using the app__
+__Viewing the app__
 
-* Enter the url `http://localhost:3456/` in your browser to view the app (or your chosen port number)
-* ...
-* ...
-* ...
+* Enter url `http://localhost:3456/` (or your chosen port number) into your browser to view and interact with the app 
+<img width="1423" alt="Screenshot" src="https://user-images.githubusercontent.com/47252337/60402019-78b93180-9b81-11e9-97f6-84f1bd4423d3.png">
 
 __Testing__
 
