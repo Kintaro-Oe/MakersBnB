@@ -20,7 +20,8 @@ GEM
     json (2.2.0)
     mini_mime (1.0.1)
     mini_portile2 (2.4.0)
-    mustermann (1.0.3)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
     nokogiri (1.10.3)
       mini_portile2 (~> 2.4.0)
     parallel (1.17.0)
@@ -28,8 +29,8 @@ GEM
       ast (~> 2.4.0)
     pg (1.1.4)
     public_suffix (3.0.3)
-    rack (2.0.7)
-    rack-protection (2.0.5)
+    rack (2.2.3)
+    rack-protection (2.2.0)
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -56,6 +57,7 @@ GEM
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 1.6)
     ruby-progressbar (1.10.0)
+    ruby2_keywords (0.0.5)
     shotgun (0.9.2)
       rack (>= 1.0)
     simplecov (0.16.1)
@@ -67,12 +69,12 @@ GEM
       hirb
       simplecov
     simplecov-html (0.10.2)
-    sinatra (2.0.5)
+    sinatra (2.2.0)
       mustermann (~> 1.0)
-      rack (~> 2.0)
-      rack-protection (= 2.0.5)
+      rack (~> 2.2)
+      rack-protection (= 2.2.0)
       tilt (~> 2.0)
-    tilt (2.0.9)
+    tilt (2.0.10)
     unicode-display_width (1.5.0)
     xpath (3.2.0)
       nokogiri (~> 1.8)
@@ -88,7 +90,7 @@ DEPENDENCIES
   shotgun (~> 0.9.2)
   simplecov (~> 0.16.1)
   simplecov-console (~> 0.4.2)
-  sinatra (~> 2.0)
+  sinatra (~> 2.2)
 
 BUNDLED WITH
    2.0.1
