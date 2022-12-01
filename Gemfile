@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "sinatra", "~> 2.0"
+gem "sinatra", "~> 2.2"
 
 gem "capybara", "~> 3.18"
 
